@@ -404,25 +404,6 @@ usiTwiDataInReceiveBuffer(
 } // end usiTwiDataInReceiveBuffer
 
 
-void
-usiClearReceiveBuffer(
-void
-)
-{
-	rxHead = 0;
-	rxTail = 0;
-
-}
-
-void
-usiClearTransmitBuffer(
-void
-)
-{
-	txHead = 0;
-	txTail = 0;
-
-}
 
 /********************************************************************************
 

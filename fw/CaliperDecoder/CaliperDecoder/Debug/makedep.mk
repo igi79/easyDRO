@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
-caliper2.c
+CaliperDecoder.c
 
 usiTwiSlave.c
 

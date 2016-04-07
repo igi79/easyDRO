@@ -45,8 +45,8 @@ Change Activity:
 #include <stdbool.h>
 
 
-/********************************************************************************
 
+/********************************************************************************
 
                                    prototypes
 
@@ -57,8 +57,6 @@ void    usiTwiTransmitByte( uint8_t );
 uint8_t usiTwiReceiveByte( void );
 bool    usiTwiDataInReceiveBuffer( void );
 
-void    usiClearReceiveBuffer( void );
-void	usiClearTransmitBuffer( void );
 
 
 /********************************************************************************
@@ -69,7 +67,7 @@ void	usiClearTransmitBuffer( void );
 
 // permitted RX buffer sizes: 1, 2, 4, 8, 16, 32, 64, 128 or 256
 
-#define TWI_RX_BUFFER_SIZE  ( 2 )
+#define TWI_RX_BUFFER_SIZE  ( 16 )
 #define TWI_RX_BUFFER_MASK  ( TWI_RX_BUFFER_SIZE - 1 )
 
 #if ( TWI_RX_BUFFER_SIZE & TWI_RX_BUFFER_MASK )
